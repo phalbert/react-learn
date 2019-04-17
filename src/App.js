@@ -4,6 +4,7 @@ import './App.css';
 import {Greet} from './components/Greet'
 import Welcome from './components/Welcome'
 import {Hello} from './components/Hello'
+import Message from './components/Message'
 
 class App extends Component {
   render() {
@@ -13,12 +14,7 @@ class App extends Component {
          <Greet name="Bruce" heroName="Superman">
            <p>This is a children prop</p>
          </Greet>
-         <Greet name="Diana" heroName="Wonderwoman">
-            <button>Click Here</button>
-         </Greet>
-         <Welcome name="good"/>
-         <Welcome name="bad"/>
-         <Hello/>
+        <Message />
       </div>
     );
   }
