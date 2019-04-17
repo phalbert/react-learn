@@ -10,8 +10,14 @@ class App extends Component {
     return (
       <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
-         <Greet/>
-         <Welcome/>
+         <Greet name="Bruce" heroName="Superman">
+           <p>This is a children prop</p>
+         </Greet>
+         <Greet name="Diana" heroName="Wonderwoman">
+            <button>Click Here</button>
+         </Greet>
+         <Welcome name="good"/>
+         <Welcome name="bad"/>
          <Hello/>
       </div>
     );
